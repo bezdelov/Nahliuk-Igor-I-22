@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Бронювання номера в готелі</title> 
+</head> 
+<body> 
+    <header> 
+        <h1>Бронювання номера в готелі</h1> 
+    </header> 
+ 
+    <main> 
+        <section> 
+            <form method="post"> 
+                <fieldset> 
+                    <legend>Дані гостя</legend> 
+ 
+                    <label for="fullName">Ім'я та прізвище:</label> 
+                    <input type="text" id="fullName" name="fullName" required> 
+                    <br><br> 
+ 
+                    <label for="email">Електронна пошта:</label> 
+                    <input type="email" id="email" name="email" required> 
+                    <br><br> 
+ 
+                    <label for="phone">Номер телефону:</label> 
+                    <input type="tel" id="phone" name="phone"> 
+                </fieldset> 
+ 
+                <br> 
+ 
+                <fieldset> 
+                    <legend>Дані бронювання</legend> 
+ 
+                    <label for="checkIn">Дата заїзду:</label> 
+                    <input type="date" id="checkIn" name="checkIn" required> 
+                    <br><br> 
+ 
+                    <label for="checkOut">Дата виїзду:</label> 
+                    <input type="date" id="checkOut" name="checkOut" required> 
+                    <br><br> 
+ 
+                    <label for="guests">Кількість гостей:</label> 
+                    <input type="number" id="guests" name="guests" min="1" max="6" required> 
+                </fieldset> 
+ 
+                <br> 
+ 
+                <fieldset> 
+                    <legend>Тип номера</legend> 
+                    <label> 
+                        <input type="radio" name="roomType" value="standard" required> 
+                        Стандарт 
+                    </label> 
+                    <br> 
+                    <label> 
+                        <input type="radio" name="roomType" value="junior-suite"> 
+                        Напівлюкс 
+                    </label> 
+                    <br> 
+                    <label> 
+                        <input type="radio" name="roomType" value="luxury"> 
+                        Люкс 
+                    </label> 
+                </fieldset> 
+ 
+                <br> 
+ 
+                <fieldset> 
+                    <legend>Додаткові послуги</legend> 
+                    <label><input type="checkbox" name="services[]" value="breakfast"> Сніданок</label><br> 
+                    <label><input type="checkbox" name="services[]" value="parking"> Паркінг</label><br> 
+                    <label><input type="checkbox" name="services[]" value="transfer"> Трансфер</label><br> 
+                    <label><input type="checkbox" name="services[]" value="cleaning"> Додаткове прибирання</label> 
+                </fieldset> 
+ 
+                <br> 
+ 
+                <label for="city">Місто:</label> 
+                <select id="city" name="city" required> 
+                    <option value="" disabled selected>Оберіть місто</option> 
+                    <option value="kyiv">Київ</option> 
+                    <option value="lviv">Львів</option> 
+                    <option value="odesa">Одеса</option> 
+                    <option value="uzhhorod">Ужгород</option> 
+                    <option value="chernivtsi">Чернівці</option> 
+                </select> 
+ 
+                <br><br> 
+ 
+                <label for="wishes">Додаткові побажання:</label><br> 
+                <textarea id="wishes" name="wishes" rows="6" cols="50" maxlength="250"></textarea> 
+ 
+                <br><br> 
+ 
+                <button type="submit">Забронювати</button> 
+                <button type="reset">Очистити форму</button> 
+            </form> 
+        </section> 
+    </main> 
+ 
+    <footer> 
+        <p>Практична робота 1</p> 
+    </footer> 
+</body> 
+</html>
