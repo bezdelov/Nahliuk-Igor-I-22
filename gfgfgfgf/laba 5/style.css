@@ -1,0 +1,92 @@
+/* Основні стилі сторінки */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222222;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    background-color: #1f3a5f;
+    color: white;
+}
+
+#main-title {
+    margin: 0 0 15px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #1f3a5f;
+}
+
+.important {
+    padding: 15px;
+    border: 2px solid #d18b00;
+    background-color: #fff2c7;
+    text-align: center;
+    font-weight: bold;
+}
+
+.products-list {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+.card h3 {
+    color: #1f3a5f;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.old-price {
+    color: #777777;
+    text-decoration: line-through;
+}
+
+.sale {
+    border: 2px solid #c0392b;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #dddddd;
+}
+
+@media (max-width: 700px) {
+    .products-list {
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
